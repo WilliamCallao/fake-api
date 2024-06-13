@@ -1,25 +1,296 @@
 {
   "solicitudes_individuales": [
-  {
-    "fecha": "2024-06-14",
-    "horario": [
-      "11:15-12:45"
-    ],
-    "ambiente": "Aula",
-    "aulas": [
-      "617B"
-    ]
-  },
-  {
-    "fecha": "2024-06-13",
-    "horario": [
-      "08:15-09:45",
-      "09:45-11:15"
-    ],
-    "ambiente": "Auditorio",
-    "aulas": [
-      "693B"
-    ]
-  }
+    {
+      "id": 1,
+      "user_id": 5,
+      "grupo": ["1", "2"],
+      "nombre_ambiente": { "nombre": "692B" },
+      "materia": "Taller de Sistemas Operativos",
+      "horas": ["06:45-08:15", "08:15-09:45"],
+      "servicios": "",
+      "detalle": "Taller práctico",
+      "fecha": "2024-06-12",
+      "created_at": "2024-05-01T12:34:56",
+      "updated_at": "2024-05-02T14:30:21"
+    },
+    {
+      "id": 2,
+      "user_id": 5,
+      "grupo": ["1"],
+      "nombre_ambiente": { "nombre": "693D" },
+      "materia": "Cálculo II",
+      "horas": ["08:15-09:45"],
+      "servicios": "Data display",
+      "detalle": "Examen parcial",
+      "fecha": "2024-05-11",
+      "created_at": "2024-05-02T12:34:56",
+      "updated_at": "2024-05-02T14:30:21"
+    },
+    {
+      "id": 3,
+      "user_id": 5,
+      "grupo": ["1"],
+      "nombre_ambiente": { "nombre": "692B" },
+      "materia": "Redes de Computadoras",
+      "horas": ["11:15-12:45"],
+      "servicios": "",
+      "detalle": "Examen parcial",
+      "fecha": "2024-05-09",
+      "created_at": "2024-05-03T12:34:56",
+      "updated_at": "2024-05-03T14:30:21"
+    },
+    {
+      "id": 4,
+      "user_id": 6,
+      "grupo": ["2"],
+      "nombre_ambiente": { "nombre": "690A" },
+      "materia": "Física II",
+      "horas": ["09:45-11:15"],
+      "servicios": "Computadoras",
+      "detalle": "Laboratorio",
+      "fecha": "2024-05-12",
+      "created_at": "2024-05-04T12:34:56",
+      "updated_at": "2024-05-04T14:30:21"
+    }
+  ],
+  "solicitudes_grupales": [
+    {
+      "id": "1",
+      "users_id": [
+        { "user_id": 5 },
+        { "user_id": 7 }
+      ],
+      "grupo": ["1", "3"],
+      "nombre_ambiente": { "nombre": "691A" },
+      "materia": "Programación Avanzada",
+      "horas": ["09:45-11:15"],
+      "servicios": "Computadoras",
+      "detalle": "Práctica de laboratorio",
+      "fecha": "2024-06-01",
+      "created_at": "2024-05-01T09:30:00",
+      "updated_at": "2024-05-01T10:00:00"
+    },
+    {
+      "id": "2",
+      "users_id": [
+        { "user_id": 8 },
+        { "user_id": 9 }
+      ],
+      "grupo": ["2", "4"],
+      "nombre_ambiente": { "nombre": "692A" },
+      "materia": "Matemáticas Discretas",
+      "horas": ["14:15-15:45"],
+      "servicios": "Proyector",
+      "detalle": "Examen final",
+      "fecha": "2024-06-01",
+      "created_at": "2024-05-02T10:30:00",
+      "updated_at": "2024-05-02T11:00:00"
+    },
+    {
+      "id": "3",
+      "users_id": [
+        { "user_id": 6 },
+        { "user_id": 10 }
+      ],
+      "grupo": ["1", "2"],
+      "nombre_ambiente": { "nombre": "693D" },
+      "materia": "Inteligencia Artificial",
+      "horas": ["15:45-17:15"],
+      "servicios": "Micrófono",
+      "detalle": "Conferencia",
+      "fecha": "2024-06-03",
+      "created_at": "2024-05-03T11:30:00",
+      "updated_at": "2024-05-03T12:00:00"
+    },
+    {
+      "id": "4",
+      "users_id": [
+        { "user_id": 7 },
+        { "user_id": 11 }
+      ],
+      "grupo": ["3", "5"],
+      "nombre_ambiente": { "nombre": "690B" },
+      "materia": "Algoritmos",
+      "horas": ["09:45-11:15"],
+      "servicios": "Pizarra electrónica",
+      "detalle": "Clase teórica",
+      "fecha": "2024-06-04",
+      "created_at": "2024-05-04T12:34:56",
+      "updated_at": "2024-05-04T14:30:21"
+    },
+    {
+      "id": "5",
+      "users_id": [
+        { "user_id": 7 },
+        { "user_id": 11 }
+      ],
+      "grupo": ["3", "5"],
+      "nombre_ambiente": { "nombre": "692B" },
+      "materia": "Algoritmos",
+      "horas": ["14:15-15:45"],
+      "servicios": "Pizarra electrónica",
+      "detalle": "Clase teórica",
+      "fecha": "2024-05-10",
+      "created_at": "2024-05-04T12:34:56",
+      "updated_at": "2024-05-04T14:30:21"
+    }
+  ],
+  "ambientes": [
+    {
+      "id": 1,
+      "nombre": "690A",
+      "capacidad": 50,
+      "tipo": "Aula",
+      "planta": "Planta 1",
+      "ubicacion": "Edificio Academico",
+      "servicios": "Computadoras",
+      "dia": "Martes",
+      "horas": ["11:15-12:45"],
+      "created_at": "2024-05-06T14:03:10.000000Z",
+      "updated_at": "2024-05-06T14:03:10.000000Z"
+    },
+    {
+      "id": 2,
+      "nombre": "690B",
+      "capacidad": 40,
+      "tipo": "Aula",
+      "planta": "Planta 1",
+      "ubicacion": "Edificio Academico",
+      "servicios": "Pizarra electrónica",
+      "dia": "Miércoles",
+      "horas": ["09:45-11:15"],
+      "created_at": "2024-05-07T14:03:10.000000Z",
+      "updated_at": "2024-05-07T14:03:10.000000Z"
+    },
+    {
+      "id": 3,
+      "nombre": "691A",
+      "capacidad": 120,
+      "tipo": "Aula",
+      "planta": "Planta 1",
+      "ubicacion": "Edificio Academico",
+      "servicios": "Computadoras",
+      "dia": "Martes",
+      "horas": ["11:15-12:45"],
+      "created_at": "2024-05-06T14:03:58.000000Z",
+      "updated_at": "2024-05-06T14:03:58.000000Z"
+    },
+    {
+      "id": 4,
+      "nombre": "691B",
+      "capacidad": 20,
+      "tipo": "Aula",
+      "planta": "Planta 1",
+      "ubicacion": "Edificio Academico",
+      "servicios": null,
+      "dia": "Lunes",
+      "horas": ["11:15-12:45"],
+      "created_at": "2024-05-06T14:03:10.000000Z",
+      "updated_at": "2024-05-06T14:03:10.000000Z"
+    },
+    {
+      "id": 5,
+      "nombre": "691C",
+      "capacidad": 80,
+      "tipo": "Aula",
+      "planta": "Planta 1",
+      "ubicacion": "Edificio Academico",
+      "servicios": null,
+      "dia": "Lunes",
+      "horas": ["06:45-08:15","08:15-09:45","11:15-12:45"],
+      "created_at": "2024-05-09T15:20:34.000000Z",
+      "updated_at": "2024-05-09T15:20:34.000000Z"
+    },
+    {
+      "id": 6,
+      "nombre": "692A",
+      "capacidad": 60,
+      "tipo": "Aula",
+      "planta": "Planta 2",
+      "ubicacion": "Edificio Academico",
+      "servicios": null,
+      "dia": "Lunes",
+      "horas": ["11:15-12:45","09:45-11:15"],
+      "created_at": "2024-05-23T00:44:59.000000Z",
+      "updated_at": "2024-05-23T00:44:59.000000Z"
+    },
+    {
+      "id": 7,
+      "nombre": "692B",
+      "capacidad": 100,
+      "tipo": "Aula",
+      "planta": "Planta 2",
+      "ubicacion": "Edificio Academico",
+      "servicios": null,
+      "dia": "Lunes",
+      "horas": ["11:15-12:45"],
+      "created_at": "2024-05-23T00:51:33.000000Z",
+      "updated_at": "2024-05-23T00:51:33.000000Z"
+    },
+    {
+      "id": 8,
+      "nombre": "692D",
+      "capacidad": 300,
+      "tipo": "Auditorio",
+      "planta": "Planta 3",
+      "ubicacion": "Edificio Academico",
+      "servicios": "Data display",
+      "dia": "Lunes",
+      "horas": ["08:15-09:45"],
+      "created_at": "2024-05-06T14:03:10.000000Z",
+      "updated_at": "2024-05-06T14:03:10.000000Z"
+    },
+    {
+      "id": 9,
+      "nombre": "693A",
+      "capacidad": 150,
+      "tipo": "Auditorio",
+      "planta": "Planta 3",
+      "ubicacion": "Edificio Academico",
+      "servicios": "Proyector",
+      "dia": "Martes",
+      "horas": ["09:45-11:15"],
+      "created_at": "2024-05-08T14:03:10.000000Z",
+      "updated_at": "2024-05-08T14:03:10.000000Z"
+    },
+    {
+      "id": 10,
+      "nombre": "693B",
+      "capacidad": 100,
+      "tipo": "Auditorio",
+      "planta": "Planta 3",
+      "ubicacion": "Edificio Academico",
+      "servicios": "Proyector",
+      "dia": "Miércoles",
+      "horas": ["11:15-12:45"],
+      "created_at": "2024-05-08T14:03:10.000000Z",
+      "updated_at": "2024-05-08T14:03:10.000000Z"
+    },
+    {
+      "id": 11,
+      "nombre": "693C",
+      "capacidad": 200,
+      "tipo": "Auditorio",
+      "planta": "Planta 3",
+      "ubicacion": "Edificio Academico",
+      "servicios": "Data Display",
+      "dia": "Jueves",
+      "horas": ["11:15-12:45"],
+      "created_at": "2024-05-09T14:03:10.000000Z",
+      "updated_at": "2024-05-09T14:03:10.000000Z"
+    },
+    {
+      "id": 12,
+      "nombre": "693D",
+      "capacidad": 250,
+      "tipo": "Auditorio",
+      "planta": "Planta 3",
+      "ubicacion": "Edificio Academico",
+      "servicios": "Data display",
+      "dia": "Viernes",
+      "horas": ["13:15-14:45"],
+      "created_at": "2024-05-10T14:03:10.000000Z",
+      "updated_at": "2024-05-10T14:03:10.000000Z"
+    }
   ]
 }
